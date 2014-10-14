@@ -1,7 +1,7 @@
 @import 'normalize';
 
 html, body{
-  font_family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
   margin-left:10%;
   margin-top:30px;
 
@@ -14,7 +14,11 @@ h1, h2, h3, h4, h5, h6{
 a{
   text-decoration: none;
   color: inherit;
+    &:hover {
+    color: #000099;
+  }
 }
+
 
 #sidebar{
   width: 250px;
@@ -53,4 +57,64 @@ a{
     }
   }
 }
+  .sign_in{
+    position: absolute;
+    right: 3em;
+    top: 85%;
+    font-size: .8em;
+    color: #9eafba;
+
+  }
+
+}
+
+button {
+  outline: none;
+  background: transparent;
+  border: 1px solid #d6dce0;
+  padding: .5em 1.5em;
+  border-radius: 1.5em;
+  &:hover {
+    border: 1px solid #33acb7;
+    color: #33acb7;
+      a{
+        color: #33acb7;
+      }
+  }
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea{
+  width: 75%;
+  border: 1px solid #d6dce0;
+  border-radius:.35em;
+  margin-top: 10px;
+  padding: .5em 1em;
+  line-height: 1.75;
+}
+
+input[type= "text"]{
+  height: 35px;
+}
+
+textarea{
+  min-height: 180px;
+}
+
+input[type="submit"]{
+  outline: none;
+  background: transparent;
+  border: 1px solid #d6dce0;
+  padding: .5em 1.5em;
+  font-size: 1.1em;
+  border-radius: 1.5em;
+  margin-left: .5em;
+  &:hover{
+    border: 1px solid #33acb7;
+    color:#33acb7
+  }
+
+}
+
+footer{
+  clear: both;
 }

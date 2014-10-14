@@ -24,7 +24,9 @@
     <li><a href="mailto:carlosh95@gmail.com">Email</a></li>
   </ul>
 
-  <p class= "sign_in">Admin Login</p>
+<!--leave this for later, read devise docs-->
+   <p class= "sign_in">Admin Login</p>
+
 </div>
 
 <div id="main_content">
@@ -38,10 +40,12 @@
     <% end %>
     </div>
 
-    <div class="buttons">
-      <button class="buttons"><%= link_to "New Post", new_post_path %></button>
-      <button class="buttons">Log Out</button>
-    </div>
+
+      <div class="buttons">
+        <button class="buttons"><%= link_to "New Post", new_post_path %></button>
+        <!-- <button class="buttons">Log Out</button> -->
+      </div>
+
   </div>
 
   <%flash.each do |name, msg| %>
@@ -55,4 +59,8 @@
 
 
 </body>
+<!-- <footer><center>
+  <p><small>All rights reserved</small></p>
+  <p><small>Carlos Hernandez</small></p>
+</center></footer> -->
 </html>
